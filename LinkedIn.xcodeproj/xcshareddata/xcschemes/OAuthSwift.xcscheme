@@ -17,7 +17,7 @@
                BlueprintIdentifier = "F43502791A6791B200038A29"
                BuildableName = "OAuthSwift.framework"
                BlueprintName = "OAuthSwift"
-               ReferencedContainer = "container:OAuthSwift.xcodeproj">
+               ReferencedContainer = "container:LinkedIn.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "F43502791A6791B200038A29"
             BuildableName = "OAuthSwift.framework"
             BlueprintName = "OAuthSwift"
-            ReferencedContainer = "container:OAuthSwift.xcodeproj">
+            ReferencedContainer = "container:LinkedIn.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -54,7 +54,7 @@
             BlueprintIdentifier = "F43502791A6791B200038A29"
             BuildableName = "OAuthSwift.framework"
             BlueprintName = "OAuthSwift"
-            ReferencedContainer = "container:OAuthSwift.xcodeproj">
+            ReferencedContainer = "container:LinkedIn.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -72,7 +72,7 @@
             BlueprintIdentifier = "F43502791A6791B200038A29"
             BuildableName = "OAuthSwift.framework"
             BlueprintName = "OAuthSwift"
-            ReferencedContainer = "container:OAuthSwift.xcodeproj">
+            ReferencedContainer = "container:LinkedIn.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
