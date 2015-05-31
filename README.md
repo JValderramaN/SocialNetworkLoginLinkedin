@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center">
   <img src="Assets/OAuthSwift-icon.png?raw=true" alt="OAuthSwift"/>
 </p>
@@ -116,3 +117,6 @@ oauthswift.authorizeWithCallbackURL( NSURL(string: "oauth-swift://oauth-callback
 
 OAuthSwift is available under the MIT license. See the LICENSE file for more info.
 
+=======
+Social Network Login LinkedIn
+>>>>>>> cf1ba83fd5dcf1eba331e904c771ce65b21ea08d
