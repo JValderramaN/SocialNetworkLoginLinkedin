@@ -9,6 +9,14 @@
 import UIKit
 import OAuthSwift
 
+let oauthswift = OAuth2Swift(
+    consumerKey:    Linkedin["consumerKey"]!,
+    consumerSecret: Linkedin["consumerSecret"]!,
+    authorizeUrl:   "https://www.linkedin.com/uas/oauth2/authorization",
+    accessTokenUrl: "https://www.linkedin.com/uas/oauth2/accessToken",
+    responseType:   "code"
+)
+
 class ViewController: UIViewController {
     
     override func viewDidLoad() {
@@ -20,26 +28,13 @@ class ViewController: UIViewController {
     }
 
     func doOAuthLinkedin(){
-        let oauthswift = OAuth2Swift(
-            consumerKey:    Linkedin["consumerKey"]!,
-            consumerSecret: Linkedin["consumerSecret"]!,
-            authorizeUrl:   "https://www.linkedin.com/uas/oauth2/authorization",
-            accessTokenUrl: "https://www.linkedin.com/uas/oauth2/accessToken",
-            responseType:   "code"
-        )
+        
         let state: String = generateStateWithLength(20) as String
         oauthswift.authorizeWithCallbackURL( NSURL(string: "http://oauthswift.herokuapp.com/callback/linkedin2")!, scope: "r_basicprofile", state: state, success: {
             credential, response in
-            self.showAlertView("LinkedIn", message: "oauth_token:\(credential.oauth_token)")
-            var parameters =  Dictionary<String, AnyObject>()
-            oauthswift.client.get("https://api.linkedin.com/v1/people/~?format=json", parameters: parameters,
-                success: {
-                    data, response in
-                    let dataString = NSString(data: data, encoding: NSUTF8StringEncoding)
-                    println(dataString)
-                }, failure: {(error:NSError!) -> Void in
-                    println(error)
-            })
+            //self.showAlertView("LinkedIn", message: "oauth_token:\(credential.oauth_token)")
+            var vc = UIStoryboard(name: "ViewController", bundle: nil).instantiateViewControllerWithIdentifier("login") as UIViewController
+            self.presentViewController(vc, animated: true, completion: nil)
             }, failure: {(error:NSError!) -> Void in
                 println(error.localizedDescription)
         })

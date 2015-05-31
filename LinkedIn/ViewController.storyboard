@@ -7,7 +7,7 @@
         <!--View Controller-->
         <scene sceneID="4iS-KM-mt9">
             <objects>
-                <viewController id="ONm-tf-mHl" customClass="ViewController" customModule="LinkedIn" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="ONm-tf-mHl" customClass="ViewController" customModule="LinkedIn" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XIp-y2-KJn"/>
                         <viewControllerLayoutGuide type="bottom" id="1pE-kS-cnY"/>
@@ -36,6 +36,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yaB-Ih-82F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="377" y="431"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="E7c-2b-fLl">
+            <objects>
+                <viewController storyboardIdentifier="login" id="aLJ-WW-Yjs" customClass="SecondViewController" customModule="LinkedIn" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o7t-89-iZW"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Ly-rV-0Z5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bOD-BA-kdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZV-mJ-h8X">
+                                <rect key="frame" x="279" y="289" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="rZV-mJ-h8X" secondAttribute="centerX" id="8QN-cT-bhb"/>
+                            <constraint firstAttribute="centerY" secondItem="rZV-mJ-h8X" secondAttribute="centerY" id="rWO-t9-6LI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="rZV-mJ-h8X" id="Mhv-ao-CHC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hU0-bk-t9S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1074" y="446"/>
         </scene>
     </scenes>
 </document>

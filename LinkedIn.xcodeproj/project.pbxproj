@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		993C53DE1B1BAA4300DEA260 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993C53DD1B1BAA4300DEA260 /* SecondViewController.swift */; };
 		999C3D711B1B009500E88F54 /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 999C3D701B1B009500E88F54 /* ViewController.storyboard */; };
 		C496246F1B00D6C30010BD09 /* OAuthWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C496246E1B00D6C30010BD09 /* OAuthWebViewController.swift */; };
 		C49624721B00F54A0010BD09 /* OAuthSwiftURLHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49624711B00F54A0010BD09 /* OAuthSwiftURLHandlerType.swift */; };
@@ -71,6 +72,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		993C53DD1B1BAA4300DEA260 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		999C3D701B1B009500E88F54 /* ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewController.storyboard; sourceTree = "<group>"; };
 		C496246E1B00D6C30010BD09 /* OAuthWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthWebViewController.swift; sourceTree = "<group>"; };
 		C49624711B00F54A0010BD09 /* OAuthSwiftURLHandlerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthSwiftURLHandlerType.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				F451E3FE195B8E910051434C /* ViewController.swift */,
 				F4C1D03C1A8A5D5000CAF356 /* WebViewController.swift */,
 				999C3D701B1B009500E88F54 /* ViewController.storyboard */,
+				993C53DD1B1BAA4300DEA260 /* SecondViewController.swift */,
 				F454D53019772AE500354060 /* Constants.swift */,
 				F451E3E4195B8D030051434C /* Images.xcassets */,
 				F451E3E5195B8D030051434C /* Info.plist */,
@@ -332,6 +335,7 @@
 				F451E3FF195B8E910051434C /* ViewController.swift in Sources */,
 				F4C1D03D1A8A5D5000CAF356 /* WebViewController.swift in Sources */,
 				F451E3E6195B8D030051434C /* AppDelegate.swift in Sources */,
+				993C53DE1B1BAA4300DEA260 /* SecondViewController.swift in Sources */,
 				F454D53119772AE500354060 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
