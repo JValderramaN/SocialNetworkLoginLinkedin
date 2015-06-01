@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         oauthswift.authorizeWithCallbackURL( NSURL(string: "http://oauthswift.herokuapp.com/callback/linkedin2")!, scope: "r_basicprofile", state: state, success: {
             credential, response in
             //self.showAlertView("LinkedIn", message: "oauth_token:\(credential.oauth_token)")
-            var vc = UIStoryboard(name: "ViewController", bundle: nil).instantiateViewControllerWithIdentifier("login") as UIViewController
+            var vc = UIStoryboard(name: "ViewController", bundle: nil).instantiateViewControllerWithIdentifier("login") as! UIViewController
             self.presentViewController(vc, animated: true, completion: nil)
             }, failure: {(error:NSError!) -> Void in
                 println(error.localizedDescription)

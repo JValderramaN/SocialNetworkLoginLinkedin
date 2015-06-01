@@ -25,8 +25,8 @@ class SecondViewController: UIViewController {
                 let jsonDict: AnyObject! = NSJSONSerialization.JSONObjectWithData(data, options: nil, error: nil)
                 println(jsonDict)
                 
-                self.firstName = jsonDict.valueForKey("firstName") as NSString!
-                self.lastName = jsonDict.valueForKey("lastName") as NSString!
+                self.firstName = jsonDict.valueForKey("firstName") as! NSString!
+                self.lastName = jsonDict.valueForKey("lastName")as! NSString!
                 self.textField.text = "Hi, I'm \(self.firstName) \(self.lastName)"
                 
                 println(self.firstName)

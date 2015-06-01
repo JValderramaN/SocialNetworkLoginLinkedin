@@ -58,7 +58,7 @@ public class OAuth1Swift: NSObject {
                 notification in
                 //NSNotificationCenter.defaultCenter().removeObserver(self)
                 NSNotificationCenter.defaultCenter().removeObserver(self.observer!)
-                let url = notification.userInfo![CallbackNotification.optionsURLKey] as NSURL
+                let url = notification.userInfo![CallbackNotification.optionsURLKey] as! NSURL
                 var parameters: Dictionary<String, String> = Dictionary()
                 if ((url.query) != nil){
                     parameters = url.query!.parametersFromQueryString()
