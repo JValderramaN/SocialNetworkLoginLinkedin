@@ -9,6 +9,9 @@
 import UIKit
 import OAuthSwift
 
+/**
+*   This controller is responsible for presenting the LogIn with LinkedIn
+*/
 class WebViewController: OAuthWebViewController, UIWebViewDelegate {
 
     var targetURL : NSURL = NSURL()
