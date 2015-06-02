@@ -8,6 +8,9 @@
 
 import Foundation
 
+/**
+*   In this source are defined Connection constants LinkedIn API
+*/
 let Linkedin =
 [
     "consumerKey": "77sufc793vxadw",
